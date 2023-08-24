@@ -184,6 +184,6 @@ def view_feedback(request):
 
 def show_feedback(request,id):
     if 'Lid' in request.session:
-        obj=Userfeedback.objects.get(id=request.session['userId'])
+        obj=Userfeedback.objects.get(id=id)
         return render(request,'show_feedback.html',{'b':obj})
     return redirect('laboratory:lab_signin')

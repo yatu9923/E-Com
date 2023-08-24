@@ -139,15 +139,15 @@ def user_profile(request):
     else:
         return redirect('user:signin')
 
-# Html To Pdf -------------------
+# # Html To Pdf -------------------
 
-from io import BytesIO
-from django.http import HttpResponse
-from django.template.loader import get_template
+# from io import BytesIO
+# from django.http import HttpResponse
+# from django.template.loader import get_template
 
-from xhtml2pdf import pisa
+# from xhtml2pdf import pisa
 
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 # Html To Pdf -------------------
 
